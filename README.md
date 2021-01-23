@@ -4,8 +4,8 @@ Cobweb
 
 A library for extremely simple distributed programming.
 
-Access methods and objects from completely separate Java processes running in an external JVM
-- even on an entirely different physical machine.
+Access methods and objects from completely separate Java processes running in an external JVM,
+even on an entirely different physical machine.
 
 Cobweb is designed to easily connect parts of a distributed Java program together, in one big spider-web.
 
