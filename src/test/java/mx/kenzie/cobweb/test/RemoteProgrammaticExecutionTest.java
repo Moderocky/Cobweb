@@ -1,6 +1,7 @@
 package mx.kenzie.cobweb.test;
 
 import mx.kenzie.cobweb.Registry;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.rmi.Remote;
@@ -9,6 +10,12 @@ import java.rmi.ServerError;
 import java.util.regex.Pattern;
 
 public class RemoteProgrammaticExecutionTest {
+    
+    @Before
+    public void open() {
+        this.getClass().getModule()
+            .addOpens("mx.kenzie.cobweb.test", Remote.class.getModule());
+    }
     
     @Test
     public void test() throws Throwable {
